@@ -16,7 +16,14 @@ interface NavbarProps {
 }
 
 export function Navbar({ onMenuClick }: NavbarProps) {
-  const { userInfo, logout } = useMe();
+  // Placeholder user info - you can connect this to your auth system
+  const userInfo = { name: 'Guest User' };
+  
+  const logout = () => {
+    // Add your logout logic here
+    console.log('Logout clicked');
+  };
+
   return (
     <nav className="fixed top-0 right-0 left-0 h-16 bg-white shadow-sm z-10">
       <div className="h-full flex items-center justify-between">

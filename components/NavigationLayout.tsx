@@ -15,13 +15,12 @@ export function NavigationLayout({ children }: NavigationLayoutProps) {
     <div className="min-h-screen bg-gray-100">
       <Navbar onMenuClick={() => setSidebarOpen(!sidebarOpen)} />
 
-      {/* Sidebar & Main Content */}
       <div className="pt-16">
-        <Sidebar isOpen={sidebarOpen} onToggle={() => setSidebarOpen(!sidebarOpen)} />
+        <Sidebar isOpen={sidebarOpen} />
         
-        <div className={`transition-all duration-300 ${sidebarOpen ? 'ml-64' : 'ml-20'}`}>
+        <main className={`transition-all duration-300 ${sidebarOpen ? 'ml-64' : 'ml-20'} p-6 min-h-[calc(100vh-4rem)]`}>
           {children}
-        </div>
+        </main>
       </div>
     </div>
   );
