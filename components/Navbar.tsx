@@ -50,11 +50,7 @@ export function Navbar({ onMenuClick }: NavbarProps) {
                   />
                 </div>
                 <div className="ml-4 hidden sm:block space-y-1">
-                  <h1 className="text-lg font-semibold text-blue-600 whitespace-nowrap">Project Document Management System</h1>
-                  <h2 className="whitespace-nowrap">
-                    <span className="text-lg font-semibold text-red-600">J0002</span>
-                    <span className="text-sm font-normal text-gray-600">-Gems T4 Mobile demo</span>
-                  </h2>
+                  <h1 className="text-lg font-semibold text-blue-600 whitespace-nowrap">Work/Machine Management System</h1>
                 </div>
               </div>
             </Link>

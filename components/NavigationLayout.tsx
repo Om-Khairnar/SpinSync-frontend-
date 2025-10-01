@@ -16,7 +16,7 @@ export function NavigationLayout({ children }: NavigationLayoutProps) {
       <Navbar onMenuClick={() => setSidebarOpen(!sidebarOpen)} />
 
       <div className="pt-16">
-        <Sidebar isOpen={sidebarOpen} />
+        <Sidebar isOpen={sidebarOpen} onToggle={() => setSidebarOpen(!sidebarOpen)} />
         
         <main className={`transition-all duration-300 ${sidebarOpen ? 'ml-64' : 'ml-20'} p-6 min-h-[calc(100vh-4rem)]`}>
           {children}

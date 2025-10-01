@@ -6,14 +6,6 @@ import Link from 'next/link';
 import {
   CalendarIcon,
   FileTextIcon,
-  FileEditIcon,
-  CheckSquareIcon,
-  ClipboardListIcon,
-  SendIcon,
-  MessageSquareIcon,
-  CheckCircleIcon,
-  UsersIcon,
-  MailIcon,
   ChevronRight,
 } from 'lucide-react';
 
@@ -24,16 +16,9 @@ interface SidebarProps {
 
 export function Sidebar({ isOpen, onToggle }: SidebarProps) {
   const menuItems = [
-    { name: 'T1 Master Schedule', path: '/t1-master-schedule', icon: CalendarIcon },
+    { name: 'Machines available', path: '/available-machines', icon: CalendarIcon },
     { name: 'T2 Design Briefs', path: '/t2-design-briefs', icon: FileTextIcon },
-    { name: 'T3 Modifications', path: '/t3-modification', icon: FileEditIcon },
-    { name: 'T4 Permit to Load', path: '/t4-permit-to-load', icon: CheckSquareIcon },
-    { name: 'Document Register', path: '/document-register', icon: ClipboardListIcon },
-    { name: 'Transmittals', path: '/transmittals', icon: SendIcon },
-    { name: 'LIR Responses', path: '/lir-responses', icon: MessageSquareIcon },
-    { name: 'Check Certificates', path: '/check-certificates', icon: CheckCircleIcon },
-    { name: 'Users', path: '/users', icon: UsersIcon },
-    { name: 'Email Log', path: '/email-log', icon: MailIcon },
+    
   ];
 
   return (
